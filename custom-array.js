@@ -1,7 +1,7 @@
 function array(...items) {
     this.items = items;
     this.push = function (item) {
-        this.items.push(item);
+        this.items[this.items.length] = item;
     }
     this.pop = function () {
         if(this.items.length === 0) return null;
