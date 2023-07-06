@@ -2,6 +2,7 @@ function array(...items) {
     this.items = items;
     this.push = function (item) {
         this.items[this.items.length] = item;
+        return this.items.length;
     }
     this.pop = function () {
         if(this.items.length === 0) return null;
